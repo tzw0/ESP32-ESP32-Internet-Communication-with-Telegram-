@@ -237,11 +237,6 @@ void setup() {
   ledcAttachPin(21, 2);
   delay(10);
   ledcWrite(greenChannel, 10);
-  wifiMulti.addAP("Linksys23723", "aaf7ar8rhf");
-  wifiMulti.addAP("link", "relation");
-  wifiMulti.addAP("bytes", "12345678");
-  wifiMulti.addAP("Linksys14683", "cmanfdqfhh");
-
   Serial.println("Connecting Wifi...");
   while(wifiMulti.run() != WL_CONNECTED) {
       ledcWrite(greenChannel, 0);
